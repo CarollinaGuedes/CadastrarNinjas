@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-qr
 @RequestMapping("/ninjas")
 
 public class NinjaController {
@@ -35,10 +34,13 @@ public class NinjaController {
     public List<NinjaModel> listarNinjas(){
         return ninjaService.listarNinjas();
     }
+
+    //localhist:8080/minjas/listar/...
     //Mostrar ninjas por id (READ)
-    @GetMapping("/listarID")
-    public String mostrarTodosOsNinjasPorID(){
-        return  "Mostrar Ninja por ID";
+    @GetMapping("/listar/{id}")
+    public NinjaModel listarNinjasPorId(@PathVariable Long id){
+        return ninjaService.listarNinjasPorID(id)
+                ´-
     }
     //Alterar dados dos ninjas(UPDATE)
     @PutMapping("/alterarID")
