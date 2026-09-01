@@ -1,12 +1,10 @@
-package dev.java10x.CadastrarNinjas.Ninjas.Controller.Service;
+package dev.java10x.CadastrarNinjas.Ninjas.model;
 
 import dev.java10x.CadastrarNinjas.Missoes.MissoesModel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.List;
 
 //Entity transforma uma classe em uma entidade do banco de dados
 //JPA Java Persistence API
